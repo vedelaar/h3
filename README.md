@@ -1,3 +1,31 @@
+# H3 platformio library
+
+I wanted to use the Uber H3 library in my esp32 project. This is the platformio library I use. It uses mostly the original H3 code, with some very small changes.
+
+## Usage
+
+In platformio.ini:
+```
+lib_deps = https://github.com/vedelaar/H3
+```
+See examples directory for the original examples. Don't do:
+```
+#include <h3/h3api.h>
+```
+like in the examples, but do:
+```
+#include <h3api.h>
+```
+
+## Changes in this repository compared to the original
+- Changed README.md (top section)
+- Added library.json
+- cp src/h3lib/include/h3api.h.in src/h3lib/include/h3api.h
+- Removed h3api.h from .gitignore
+
+
+# The original readme:
+
 <img align="right" src="https://uber.github.io/img/h3Logo-color.svg" alt="H3 Logo" width="200">
 
 # H3: A Hexagonal Hierarchical Geospatial Indexing System

@@ -1,0 +1,17 @@
+{
+    "name": "H3",
+    "version": "3.7.2+b04d56e",
+    "keywords": "gps",
+    "description": "H3: A Hexagonal Hierarchical Geospatial Indexing System",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vedelaar/h3.git"
+    },
+    "frameworks": "*",
+    "platforms": "*",
+
+    "build": {
+        "srcDir": "src/h3lib/lib",
+        "includeDir": "src/h3lib/include"
+    }
+}
